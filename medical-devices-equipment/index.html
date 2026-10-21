@@ -199,10 +199,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			position: relative !important;
 		}
 
-		/* Parent item hover / active / focus state */
-		.elementor-nav-menu--main .elementor-nav-menu > li.menu-item-has-children:hover > a.elementor-item,
-		.elementor-nav-menu--main .elementor-nav-menu > li.menu-item-has-children:focus-within > a.elementor-item,
-		.elementor-nav-menu--main .elementor-nav-menu > li.menu-item-has-children.highlighted > a.elementor-item {
+		/* All main navigation items hover / active state */
+		.elementor-nav-menu--main .elementor-nav-menu > li:hover > a.elementor-item,
+		.elementor-nav-menu--main .elementor-nav-menu > li > a.elementor-item:hover,
+		.elementor-nav-menu--main .elementor-nav-menu > li > a.elementor-item:focus,
+		.elementor-nav-menu--main .elementor-nav-menu > li > a.elementor-item.elementor-item-active,
+		.elementor-nav-menu--main .elementor-nav-menu > li.current-menu-item > a.elementor-item,
+		.elementor-nav-menu--main .elementor-nav-menu > li:last-child:hover > a.elementor-item,
+		.elementor-nav-menu--main .elementor-nav-menu > li:last-child > a.elementor-item:hover,
+		.elementor-nav-menu--main .elementor-nav-menu > li.menu-item-1318:hover > a.elementor-item,
+		.elementor-nav-menu--main .elementor-nav-menu > li.menu-item-1318 > a.elementor-item:hover {
 			color: #38B44F !important;
 		}
 
@@ -289,6 +295,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		.elementor-nav-menu--main ul.sub-menu li {
 			margin: 0 !important;
 			padding: 0 !important;
+			width: 100% !important;
+			box-sizing: border-box !important;
 			border-bottom: 1px solid #edf8f0 !important;
 			list-style: none !important;
 			background: transparent !important;
@@ -305,6 +313,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			align-items: center !important;
 			justify-content: flex-start !important;
 			gap: 12px !important;
+			width: 100% !important;
+			box-sizing: border-box !important;
 			padding: 12px 4px !important;
 			font-family: "Poppins", Sans-serif !important;
 			font-size: 14.5px !important;
@@ -341,12 +351,16 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			transition: background-color 0.2s ease, transform 0.2s ease !important;
 		}
 
-		/* Hover & Active states for sub-items */
+		/* Hover & Active states for all sub-items (including last option) */
 		.elementor-nav-menu--main ul.sub-menu li:hover > a.elementor-sub-item,
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item:hover,
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item:focus,
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item.elementor-item-active,
-		.elementor-nav-menu--main ul.sub-menu li.current-menu-item > a.elementor-sub-item {
+		.elementor-nav-menu--main ul.sub-menu li.current-menu-item > a.elementor-sub-item,
+		.elementor-nav-menu--main ul.sub-menu li:last-child:hover > a.elementor-sub-item,
+		.elementor-nav-menu--main ul.sub-menu li:last-child a.elementor-sub-item:hover,
+		.elementor-nav-menu--main ul.sub-menu li.menu-item-2089:hover > a,
+		.elementor-nav-menu--main ul.sub-menu li.menu-item-2089 a:hover {
 			color: #38B44F !important;
 			background: transparent !important;
 			background-color: transparent !important;
@@ -357,7 +371,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item:hover::before,
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item:focus::before,
 		.elementor-nav-menu--main ul.sub-menu li a.elementor-sub-item.elementor-item-active::before,
-		.elementor-nav-menu--main ul.sub-menu li.current-menu-item > a.elementor-sub-item::before {
+		.elementor-nav-menu--main ul.sub-menu li.current-menu-item > a.elementor-sub-item::before,
+		.elementor-nav-menu--main ul.sub-menu li:last-child:hover > a.elementor-sub-item::before,
+		.elementor-nav-menu--main ul.sub-menu li:last-child a.elementor-sub-item:hover::before,
+		.elementor-nav-menu--main ul.sub-menu li.menu-item-2089:hover > a::before,
+		.elementor-nav-menu--main ul.sub-menu li.menu-item-2089 a:hover::before {
 			background-color: #38B44F !important;
 			transform: scale(1.15) !important;
 		}
