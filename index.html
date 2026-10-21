@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon Health Medicine & Medical Supplies TR L.L.C.S.P | Medical Supplies in Dubai You Can Rely On</title>
+    <meta name="description"
+        content="Beacon Health imports and distributes medical consumables, devices, equipment and medicines to hospitals, clinics, pharmacies and laboratories across the UAE.">
+
+    <!-- Google Fonts: Manrope (Headings), Poppins (Body Text) & Cairo (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================================
+       Header / Navbar
+       ========================================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="Beacon Health Home">
+                <img src="images/logo.webp" alt="Beacon Health Medicine &amp; Medical Supplies TR L.L.C.S.P"
+                    class="brand-logo-img" style="height: 52px; width: auto; object-fit: contain;">
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="nav_about_us">About Us</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#products" class="nav-link" data-i18n="nav_products">Products <span
+                                class="nav-arrow">▾</span></a>
+                    </li>
+                    <li><a href="about.html#commitment" class="nav-link" data-i18n="nav_commitment">Our Commitment</a></li>
+                    <li><a href="about.html#mission" class="nav-link" data-i18n="nav_mission">Our Mission</a></li>
+                    <li><a href="about.html#vision" class="nav-link" data-i18n="nav_vision">Our Vision</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions: Language Switcher & CTA -->
+            <div class="header-actions">
+
+                <!-- Language Switcher Dropdown (English / Arabic) -->
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false"
+                        aria-label="Select Language">
+                        <img id="currentFlag" class="flag-icon"
+                            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'><clipPath id='s'><path d='M0 0v30h60V0z'/></clipPath><clipPath id='t'><path d='M0 0l60 30m0-30L0 30'/></clipPath><g clip-path='url(%23s)'><path d='M0 0v30h60V0z' fill='%23012169'/><path d='M0 0l60 30m0-30L0 30' stroke='%23fff' stroke-width='6'/><path d='M0 0l60 30m0-30L0 30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/><path d='M30 0v30M0 15h60' stroke='%23fff' stroke-width='10'/><path d='M30 0v30M0 15h60' stroke='%23C8102E' stroke-width='6'/></g></svg>"
+                            alt="Language Flag">
+                        <span id="currentLangLabel" data-i18n="lang_label">English</span>
+                        <span class="dropdown-chevron">▾</span>
+                    </button>
+
+                    <div class="lang-dropdown-menu" id="langDropdownMenu" role="menu">
+                        <div class="lang-option selected" data-lang="en" role="menuitem">
+                            <img class="flag-icon"
+                                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'><clipPath id='s'><path d='M0 0v30h60V0z'/></clipPath><clipPath id='t'><path d='M0 0l60 30m0-30L0 30'/></clipPath><g clip-path='url(%23s)'><path d='M0 0v30h60V0z' fill='%23012169'/><path d='M0 0l60 30m0-30L0 30' stroke='%23fff' stroke-width='6'/><path d='M0 0l60 30m0-30L0 30' clip-path='url(%23t)' stroke='%23C8102E' stroke-width='4'/><path d='M30 0v30M0 15h60' stroke='%23fff' stroke-width='10'/><path d='M30 0v30M0 15h60' stroke='%23C8102E' stroke-width='6'/></g></svg>"
+                                alt="English">
+                            <span>English</span>
+                        </div>
+                        <div class="lang-option" data-lang="ar" role="menuitem">
+                            <img class="flag-icon"
+                                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 30'><rect width='60' height='10' fill='%2300732F'/><rect y='10' width='60' height='10' fill='%23FFFFFF'/><rect y='20' width='60' height='10' fill='%23000000'/><rect width='18' height='30' fill='%23FF0000'/></svg>"
+                                alt="العربية">
+                            <span>العربية (Arabic)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Get in Touch CTA Button -->
+                <a href="#contact" class="btn btn-blue" data-i18n="btn_get_touch">Get In Touch</a>
+
+                <!-- Mobile Menu Toggle Hamburger -->
+                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Slide-out Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+        <div class="mobile-drawer-content">
+            <div class="brand-logo">
+                <img src="images/logo.webp" alt="Beacon Health" style="height: 48px; width: auto; object-fit: contain;">
+            </div>
+
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="nav-link mobile-nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.html" class="nav-link mobile-nav-link" data-i18n="nav_about_us">About Us</a></li>
+                <li><a href="#products" class="nav-link mobile-nav-link" data-i18n="nav_products">Products</a></li>
+                <li><a href="about.html#commitment" class="nav-link mobile-nav-link" data-i18n="nav_commitment">Our Commitment</a>
+                </li>
+                <li><a href="about.html#mission" class="nav-link mobile-nav-link" data-i18n="nav_mission">Our Mission</a></li>
+                <li><a href="about.html#vision" class="nav-link mobile-nav-link" data-i18n="nav_vision">Our Vision</a></li>
+                <li><a href="#contact" class="nav-link mobile-nav-link" data-i18n="nav_contact">Contact Us</a></li>
+            </ul>
+
+            <div class="mobile-drawer-actions">
+                <a href="#contact" class="btn btn-primary" data-i18n="btn_get_touch">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-subtitle" data-i18n="hero_badge">The Beacon Behind Better Care.</div>
+                    <h1 class="hero-title">
+                        <span class="hero-title-line1"><span data-i18n="hero_title_1">Medical Supplies in </span><span
+                                class="hero-dubai" data-i18n="hero_title_highlight">DUBAI</span></span>
+                        <span class="hero-title-line2" data-i18n="hero_title_2">You Can Rely On</span>
+                    </h1>
+                    <p class="hero-description" data-i18n="hero_desc">
+                        Beacon Health imports and distributes medical consumables, devices, equipment and medicines to
+                        hospitals, clinics, pharmacies and laboratories across the UAE.
+                    </p>
+                    <div class="hero-btn-group">
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_quote">Request a Quote</a>
+                        <a href="#products" class="btn btn-outline-white" data-i18n="hero_btn_portfolio">Explore Our
+                            Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Metrics / Key Statistics Bar
+         ========================================================================== -->
+        <section class="metrics-section" aria-label="Key Statistics">
+            <div class="container">
+                <div class="metrics-card">
+
+                    <div class="metric-item">
+                        <div class="metric-number">03+</div>
+                        <div class="metric-label" data-i18n="stat_partners">Core Product<br>Categories</div>
+                    </div>
+
+                    <div class="metric-item">
+                        <div class="metric-number">50+</div>
+                        <div class="metric-label" data-i18n="stat_clients">Healthcare<br>Supply &amp;<br>Distribution
+                        </div>
+                    </div>
+
+                    <div class="metric-item">
+                        <div class="metric-number">10+</div>
+                        <div class="metric-label" data-i18n="stat_mfg">International<br>Manufacturing<br>Partners</div>
+                    </div>
+
+                    <div class="metric-item">
+                        <div class="metric-number">40+</div>
+                        <div class="metric-label" data-i18n="stat_emirates">Healthcare<br>Providers &amp;<br>Businesses
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         About Section ("A Dubai Healthcare Supplier Built On Trust")
+         ========================================================================== -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-visual">
+                        <img src="images/Rectangle 23 (1).webp" alt="Warehouse logistics" loading="lazy">
+                    </div>
+
+                    <div class="about-content">
+                        <span class="section-tag" data-i18n="about_tag">About Beacon</span>
+                        <h2 class="section-title" data-i18n="about_title">A Dubai Healthcare Supplier Built On Trust
+                        </h2>
+                        <p class="about-lead" data-i18n="about_p1">
+                            Beacon Health LLC is an established UAE healthcare provider dedicated to delivering
+                            certified medical supplies, consumables, and equipment to leading healthcare institutions
+                            across the UAE.
+                        </p>
+                        <p class="about-text" data-i18n="about_p2">
+                            We bridge the gap between global manufacturers and regional healthcare providers, ensuring
+                            reliable, high-volume supply with exceptional standards of compliance and speed.
+                        </p>
+                        <p class="about-text" data-i18n="about_p3">
+                            With specialized cold-chain and temperature-controlled logistics, we guarantee product
+                            integrity from manufacturer to bedside across all 7 Emirates.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Product Range Section
+         ========================================================================== -->
+        <section class="products-section" id="products">
+            <div class="container">
+
+                <div class="products-header">
+                    <div class="products-header-left">
+                        <span class="section-tag" data-i18n="prod_tag">Our Product Range</span>
+                        <h2 class="section-title" data-i18n="prod_title">Medical Consumables, Devices,<br class="products-title-br"> Equipment And Medicines</h2>
+                    </div>
+                    <div class="products-header-right">
+                        <p data-i18n="prod_desc">One trusted source for the healthcare products your facility uses every day.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="prod_btn_all">View All Products</a>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- Card 1: Consumables -->
+                    <article class="product-card">
+                        <div class="product-card-thumb">
+                            <img src="images/Rectangle 34624361.webp" alt="Medical Consumables" loading="lazy">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-tag" data-i18n="prod_card1_tag">EVERYDAY CLINICAL
+                                ESSENTIALS</span>
+                            <h3 class="product-card-title" data-i18n="prod_card1_title">Medical Consumables</h3>
+                            <a href="#contact" class="product-card-link" data-i18n="prod_card1_link">Explore This
+                                Range</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Devices & Equipment -->
+                    <article class="product-card">
+                        <div class="product-card-thumb">
+                            <img src="images/Rectangle 34624362.webp" alt="Medical Devices & Equipment" loading="lazy">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-tag" data-i18n="prod_card2_tag">EQUIPMENT FOR BETTER CARE</span>
+                            <h3 class="product-card-title" data-i18n="prod_card2_title">Medical Devices &amp; Equipment
+                            </h3>
+                            <a href="#contact" class="product-card-link" data-i18n="prod_card2_link">Explore This
+                                Range</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Medicines -->
+                    <article class="product-card">
+                        <div class="product-card-thumb">
+                            <img src="images/Rectangle 34624363.webp" alt="Medicines" loading="lazy">
+                        </div>
+                        <div class="product-card-body">
+                            <span class="product-card-tag" data-i18n="prod_card3_tag">SELECTED PHARMACEUTICAL
+                                RANGE</span>
+                            <h3 class="product-card-title" data-i18n="prod_card3_title">Medicines</h3>
+                            <a href="#contact" class="product-card-link" data-i18n="prod_card3_link">Explore This
+                                Range</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Who We Serve Section (Accordion & Dynamic Previews)
+         ========================================================================== -->
+        <section class="serve-section" id="customers">
+            <div class="container">
+                <div class="serve-grid">
+
+                    <div class="serve-left">
+                        <span class="section-tag" data-i18n="serve_tag">WHO WE SERVE</span>
+                        <h2 class="section-title" data-i18n="serve_title">Supplying Healthcare Providers Across The UAE
+                        </h2>
+                        <p class="serve-desc" data-i18n="serve_desc">
+                            From tertiary hospitals and specialized surgery centres to primary care clinics and retail
+                            pharmacies, Beacon Health delivers custom healthcare supply solutions tailored to your
+                            operational scale.
+                        </p>
+                        <div class="serve-highlight-box" data-i18n="serve_highlight">
+                            Direct-to-facility delivery with guaranteed cold chain compliance across all seven emirates.
+                        </div>
+                    </div>
+
+                    <div class="serve-right">
+                        <div class="serve-list" id="serveList">
+
+                            <!-- Category 1: Pharmacies -->
+                            <div class="serve-item active" data-index="0">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title" data-i18n="serve_tab_pharmacies">Pharmacies</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open"
+                                                data-i18n="serve_tab_pharmacies">Pharmacies</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/pharmacies_alternative_412x181.png" alt="Pharmacies"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Category 2: Medical Centers -->
+                            <div class="serve-item" data-index="1">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title" data-i18n="serve_tab_centres">Medical Centers</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open" data-i18n="serve_tab_centres">Medical
+                                                Centers</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/medical_center_412x181.png" alt="Medical Centers"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Category 3: Distributors -->
+                            <div class="serve-item" data-index="2">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title"
+                                        data-i18n="serve_tab_distributors">Distributors</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open"
+                                                data-i18n="serve_tab_distributors">Distributors</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/healthcare_provider_412x181.png" alt="Distributors"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Category 4: Healthcare Providers -->
+                            <div class="serve-item" data-index="3">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title" data-i18n="serve_tab_providers">Healthcare
+                                        Providers</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open"
+                                                data-i18n="serve_tab_providers">Healthcare Providers</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/healthcare_provider_412x181.png"
+                                                    alt="Healthcare Providers" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Category 5: Hospitals -->
+                            <div class="serve-item" data-index="4">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title" data-i18n="serve_tab_hospitals">Hospitals</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open"
+                                                data-i18n="serve_tab_hospitals">Hospitals</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/hospital_412x181.png" alt="Hospitals" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Category 6: Clinics -->
+                            <div class="serve-item" data-index="5">
+                                <div class="serve-item-header">
+                                    <span class="serve-item-title" data-i18n="serve_tab_clinics">Clinics</span>
+                                    <span class="serve-arrow" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                                            <polyline points="7 7 17 7 17 17"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="serve-item-body">
+                                    <div class="serve-item-body-inner">
+                                        <div class="serve-item-content">
+                                            <span class="serve-item-title-open"
+                                                data-i18n="serve_tab_clinics">Clinics</span>
+                                            <div class="serve-item-image">
+                                                <img src="images/clinic_alternative_412x181.png" alt="Clinics"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Why Choose Beacon Health
+         ========================================================================== -->
+        <section class="features-section" id="why-us">
+            <div class="container">
+
+                <div class="features-header">
+                    <span class="section-tag" data-i18n="why_tag">Why Choose Beacon Health</span>
+                    <h2 class="section-title" data-i18n="why_title">Why Healthcare Businesses Choose Beacon Health</h2>
+                </div>
+
+                <div class="features-grid">
+
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-card-bg" aria-hidden="true"></div>
+                        <div class="feature-icon-wrapper">
+                            <img src="images/Group (28).svg" alt="Carefully Selected Products" width="32" height="32">
+                        </div>
+                        <h3 class="feature-title" data-i18n="why_f1_title">Carefully Selected Products</h3>
+                        <p class="feature-desc" data-i18n="why_f1_desc">
+                            We do not stock everything. We focus on products that meet the real needs of the UAE
+                            healthcare market.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-card-bg" aria-hidden="true"></div>
+                        <div class="feature-icon-wrapper">
+                            <img src="images/Group (29).svg" alt="Competitive Value" width="32" height="32">
+                        </div>
+                        <h3 class="feature-title" data-i18n="why_f2_title">Competitive Value</h3>
+                        <p class="feature-desc" data-i18n="why_f2_desc">
+                            Quality healthcare products at commercially competitive prices, so your budget goes further.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-card-bg" aria-hidden="true"></div>
+                        <div class="feature-icon-wrapper">
+                            <img src="images/Group (30).svg" alt="Efficient Distribution" width="32" height="32">
+                        </div>
+                        <h3 class="feature-title" data-i18n="why_f3_title">Efficient Distribution</h3>
+                        <p class="feature-desc" data-i18n="why_f3_desc">
+                            Responsive ordering, dependable supply and helpful customer support from a team based in
+                            Dubai.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-card-bg" aria-hidden="true"></div>
+                        <div class="feature-icon-wrapper">
+                            <img src="images/Group (31).svg" alt="A Long-Term Approach" width="32" height="32">
+                        </div>
+                        <h3 class="feature-title" data-i18n="why_f4_title">A Long-Term Approach</h3>
+                        <p class="feature-desc" data-i18n="why_f4_desc">
+                            We build sustainable partnerships with both customers and manufacturers. Your success is our
+                            reputation.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Quality & Regulatory Compliance Section
+         ========================================================================== -->
+        <section class="quality-section">
+            <div class="container">
+                <div class="quality-grid">
+
+                    <div class="quality-content">
+                        <span class="section-tag" data-i18n="quality_tag">Quality &amp; Compliance</span>
+                        <h2 class="section-title" data-i18n="quality_title">Quality And Regulatory Compliance You Can
+                            Count On</h2>
+                        <p data-i18n="quality_p1">
+                            Beacon Health strictly adheres to UAE Ministry of Health and Prevention (MOHAP), Dubai
+                            Health Authority (DHA), and international WHO-GDP standards.
+                        </p>
+                        <p data-i18n="quality_p2">
+                            Every batch undergoes rigorous quality inspection with full traceability and batch release
+                            certificates delivered with every shipment.
+                        </p>
+                        <p data-i18n="quality_p3">
+                            Licensed for distribution, storage, and import of medical devices, pharmaceuticals, and OTC
+                            healthcare essentials.
+                        </p>
+                        <div>
+                            <a href="#contact" class="btn btn-primary" data-i18n="quality_btn">Request Documentation</a>
+                        </div>
+                    </div>
+
+                    <div class="quality-visual">
+                        <img src="images/image_3_720x484.jpg" alt="Quality And Regulatory Compliance" loading="lazy">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Global Partners Section
+         ========================================================================== -->
+        <section class="partners-section" id="partners">
+            <div class="container">
+
+                <div class="partners-header">
+                    <div class="partners-header-left">
+                        <span class="section-tag" data-i18n="partners_tag">Global Partners</span>
+                        <h2 class="section-title" data-i18n="partners_title">Global Partners. Local Reach.</h2>
+                    </div>
+                    <div class="partners-header-right">
+                        <p data-i18n="partners_desc">
+                            We work with established healthcare manufacturers from around the world and bring<br
+                                class="partners-desc-br">
+                            selected products and brands to the UAE, with growing supply into the GCC and Africa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="partners-logos-wrap">
+
+                    <!-- Row 1: 5 Logos -->
+                    <div class="partners-row partners-row-5">
+                        <div class="partner-logo-item">
+                            <img src="images/abbott-trimmed.png" alt="Abbott" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/Johnson-Johnson-Logo-trimmed.png" alt="Johnson &amp; Johnson"
+                                loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/Novo_Nordisk-Logo.webp" alt="Novo Nordisk" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/anios-trimmed.png" alt="Laboratoires ANIOS" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/osteobiol-trimmed.png" alt="OsteoBiol by Tecnoss" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: 4 Logos -->
+                    <div class="partners-row partners-row-4">
+                        <div class="partner-logo-item">
+                            <img src="images/Logo-Saratoga.png" alt="Saratoga" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/6a1f4bd3eba8b9beff483bdf_EN_Consarctic Logo_Since 1992.png"
+                                alt="Consarctic" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/KARO_HEALTHCARE_DARK_BLUE_VERSION.2_RGB.jpg" alt="Karo Healthcare"
+                                loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/CD-Medical-blue-logo-landscape-(transp).png" alt="CD Medical"
+                                loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Row 3: 5 Logos -->
+                    <div class="partners-row partners-row-5">
+                        <div class="partner-logo-item">
+                            <img src="images/inpress-trimmed.png" alt="Inpress" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/genesis-trimmed.png" alt="Genesis BPS" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/images (1).png" alt="Genomind" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/images (2).png" alt="Kuraray" loading="lazy">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="images/images (3).png" alt="Medicom" loading="lazy">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+         Call To Action (CTA) Banner
+         ========================================================================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="cta-title" data-i18n="cta_title">Let's Talk About Your Supply Needs</h2>
+                    <p class="cta-desc" data-i18n="cta_desc">
+                        Looking for a reliable medical supplier in Dubai? Send us your product requirements and our team
+                        will respond promptly with the right solution.
+                    </p>
+                    <a href="#contact" class="btn btn-primary" data-i18n="cta_btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- Col 1: About & Social Links -->
+                <div class="footer-col footer-col-about">
+                    <a href="#home" class="footer-logo" aria-label="Beacon Health Home">
+                        <img src="images/Mask group (1).png"
+                            alt="Beacon Health Medicine &amp; Medical Supplies TR L.L.C.S.P" class="footer-logo-img">
+                    </a>
+                    <p class="footer-desc" data-i18n="footer_desc">
+                        Beacon Health Medicine &amp; Medical Supplies TR LLC S.P. Imports and distributes medical
+                        consumables, medical devices, equipment and medicines across the UAE.
+                    </p>
+                    <div class="footer-follow">
+                        <span class="footer-follow-label" data-i18n="footer_follow_us">Follow Us :</span>
+                        <div class="footer-socials">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer_quick_links">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" class="footer-link" data-i18n="nav_about_us">About Us</a></li>
+                        <li><a href="#products" class="footer-link" data-i18n="nav_products">Products</a></li>
+                        <li><a href="about.html#commitment" class="footer-link" data-i18n="nav_commitment">Our Commitment</a></li>
+                        <li><a href="about.html#mission" class="footer-link" data-i18n="nav_mission">Our Mission</a></li>
+                        <li><a href="about.html#vision" class="footer-link" data-i18n="nav_vision">Our Vision</a></li>
+                        <li><a href="#contact" class="footer-link" data-i18n="nav_contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Our Services -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer_our_services">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products" class="footer-link" data-i18n="footer_serv_supplies">Medical
+                                Supplies</a></li>
+                        <li><a href="#products" class="footer-link" data-i18n="footer_serv_equipment">Medical
+                                Equipment</a></li>
+                        <li><a href="#products" class="footer-link" data-i18n="footer_serv_pharma">Pharmaceutical
+                                Products</a></li>
+                        <li><a href="#customers" class="footer-link" data-i18n="footer_serv_distribution">Healthcare
+                                Distribution</a></li>
+                        <li><a href="#products" class="footer-link" data-i18n="footer_serv_sourcing">Product
+                                Sourcing</a></li>
+                        <li><a href="#why-us" class="footer-link" data-i18n="footer_serv_partnerships">Business
+                                Partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Information -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title" data-i18n="footer_contact">Contact</h4>
+                    <div class="footer-contact-list">
+
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-circle-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </span>
+                            <div class="footer-contact-details">
+                                <span class="footer-contact-label" data-i18n="footer_email_label">Email:</span>
+                                <a href="mailto:Abc@gmail.com" class="footer-contact-value"
+                                    data-i18n="footer_email_val">Abc@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-circle-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </span>
+                            <div class="footer-contact-details">
+                                <span class="footer-contact-label" data-i18n="footer_phone_label">Phone:</span>
+                                <a href="tel:+97141234567" class="footer-contact-value" data-i18n="footer_phone_val">+97
+                                    ***** *****</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-circle-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                            </span>
+                            <div class="footer-contact-details">
+                                <span class="footer-contact-label" data-i18n="footer_address_label">Address:</span>
+                                <span class="footer-contact-value" data-i18n="footer_address_val">Dubai, United Arab
+                                    Emirates</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Copyright & Legal Links -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-inner">
+                    <p data-i18n="footer_copyright">Copyright © 2026 BEACON HEALTH MEDICINE &amp; MEDICAL SUPPLIES TR
+                        LL.C.S.P. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+                        <span class="footer-bottom-divider">·</span>
+                        <a href="#" data-i18n="footer_terms">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       Floating Action Buttons (WhatsApp & Direct Phone Call)
+       ========================================================================== -->
+    <aside class="floating-actions" aria-label="Quick Communication Channels">
+        <a href="https://wa.me/97141234567" class="float-btn whatsapp" target="_blank" rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+            </svg>
+        </a>
+        <a href="tel:+97141234567" class="float-btn call" aria-label="Direct Phone Call">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01A11.36 11.36 0 018.57 3.9c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.52c0-.55-.45-1-.99-1z" />
+            </svg>
+        </a>
+    </aside>
+
+    <!-- Interactive Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
