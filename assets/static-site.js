@@ -24,4 +24,21 @@
     form.insertAdjacentElement('afterend', notice);
     window.location.href = `mailto:Abc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }, true);
+
+  // Ensure language switcher images never show broken icon placeholders
+  const fixFlags = () => {
+    document.querySelectorAll('.gt_switcher img').forEach((img) => {
+      img.onerror = () => { img.style.display = 'none'; };
+      if (img.complete && img.naturalWidth === 0 && img.src) {
+        img.style.display = 'none';
+      }
+    });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixFlags);
+  } else {
+    fixFlags();
+  }
+  setTimeout(fixFlags, 500);
+  setTimeout(fixFlags, 1500);
 })();

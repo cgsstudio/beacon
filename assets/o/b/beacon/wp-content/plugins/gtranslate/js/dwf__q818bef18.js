@@ -15,7 +15,9 @@
     var alt_flags = gt.alt_flags||{};
     var flag_size = gt.flag_size||32;
     var flag_style = gt.flag_style||'2d';
-    var flags_location = gt.flags_location||'https://cdn.gtranslate.net/flags/';
+    var script_src = (document.currentScript && document.currentScript.src) ? document.currentScript.src : '';
+    var local_flags = script_src ? script_src.replace(/\/js\/[^/]*$/, '/flags/') : '';
+    var flags_location = local_flags || (gt.flags_location && !gt.flags_location.startsWith('/beacon/') ? gt.flags_location : '') || 'https://cdn.gtranslate.net/flags/';
     var url_structure = gt.url_structure||'none';
     var custom_domains = gt.custom_domains||{};
 
@@ -119,7 +121,7 @@
     widget_css += u_class + ' .gt_switcher .gt_option::-webkit-scrollbar-thumb{background-color:#888}';
 
     widget_code += '<div class="gt_switcher notranslate">';
-    var gt_current_div = '<div class="gt_selected"><a href="#"><img src="'+get_flag_src(current_lang)+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+current_lang+'" /> '+lang_array[current_lang]+'</a></div>';
+    var gt_current_div = '<div class="gt_selected"><a href="#" role="button"><img src="'+get_flag_src(current_lang)+'" height="'+flag_size+'" width="'+flag_size+'" alt="'+current_lang+'" onerror="this.style.opacity=0;" /> '+lang_array[current_lang]+'</a></div>';
     var gt_options_div = '<div class="gt_option">';
     languages.forEach(function(lang) {
         var el_a = document.createElement('a');
@@ -132,6 +134,7 @@
         var el_img = document.createElement('img');
         el_img.height = el_img.width = flag_size;
         el_img.alt = lang;
+        el_img.setAttribute('onerror', 'this.style.opacity=0;');
         el_img.setAttribute('data-gt-lazy-src', get_flag_src(lang));
 
         el_a.appendChild(el_img);
