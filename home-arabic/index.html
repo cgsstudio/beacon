@@ -643,20 +643,21 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		}
 
 		/* ====================================================
-		   COUNTER SECTION (Exact Match with Reference Design)
+		   COUNTER SECTION (1600px Max-Width & Enlarged Typography)
 		   ==================================================== */
 		.elementor-72 .elementor-element.elementor-element-5407761,
 		.beacon-counter-section {
 			background-color: #EBF4FC !important;
-			padding-top: 48px !important;
-			padding-bottom: 48px !important;
-			padding-left: 20px !important;
-			padding-right: 20px !important;
+			padding-top: 56px !important;
+			padding-bottom: 56px !important;
+			padding-left: 32px !important;
+			padding-right: 32px !important;
+			width: 100% !important;
 		}
 
 		.elementor-72 .elementor-element.elementor-element-5407761 > .e-con-inner,
 		.beacon-counter-section > .e-con-inner {
-			max-width: 1240px !important;
+			max-width: 1600px !important;
 			margin: 0 auto !important;
 			width: 100% !important;
 			padding: 0 !important;
@@ -670,7 +671,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			align-items: center !important;
 			justify-content: space-between !important;
 			width: 100% !important;
-			margin: 0 !important;
+			max-width: 1600px !important;
+			margin: 0 auto !important;
 			padding: 0 !important;
 			gap: 0 !important;
 		}
@@ -680,7 +682,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			display: flex !important;
 			align-items: center !important;
 			justify-content: center !important;
-			padding: 0 8px !important;
+			padding: 0 16px !important;
 			border: none !important;
 			background: transparent !important;
 			width: auto !important;
@@ -692,7 +694,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			flex-direction: row !important;
 			align-items: center !important;
 			justify-content: center !important;
-			gap: 16px !important;
+			gap: 20px !important;
 			text-align: left !important;
 		}
 
@@ -705,48 +707,64 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 		.beacon-counter-number {
 			font-family: "Poppins", "Manrope", Sans-serif !important;
-			font-size: 58px !important;
+			font-size: 76px !important;
 			font-weight: 600 !important;
 			line-height: 1 !important;
 			color: #0956A4 !important;
-			letter-spacing: -1px !important;
+			letter-spacing: -1.5px !important;
 			white-space: nowrap !important;
 			display: inline-block !important;
 		}
 
 		.beacon-counter-title {
 			font-family: "Poppins", "Manrope", Sans-serif !important;
-			font-size: 14.5px !important;
+			font-size: 18px !important;
 			font-weight: 500 !important;
 			line-height: 1.35 !important;
 			color: #1a2332 !important;
 			text-align: left !important;
 			white-space: nowrap !important;
-			letter-spacing: -0.1px !important;
+			letter-spacing: -0.2px !important;
 		}
 
 		.beacon-counter-divider {
-			width: 1.5px !important;
-			height: 54px !important;
+			width: 2px !important;
+			height: 72px !important;
 			background-color: #38B44F !important;
 			flex-shrink: 0 !important;
 			border-radius: 1px !important;
-			margin: 0 4px !important;
+			margin: 0 10px !important;
 		}
 
-		/* Laptop / Medium Desktop (1025px - 1280px) */
-		@media (min-width: 1025px) and (max-width: 1280px) {
+		/* Laptop / Medium Desktop (1200px - 1440px) */
+		@media (min-width: 1200px) and (max-width: 1440px) {
 			.beacon-counter-number {
-				font-size: 48px !important;
+				font-size: 66px !important;
 			}
 			.beacon-counter-title {
-				font-size: 13px !important;
+				font-size: 16.5px !important;
 			}
 			.beacon-counter-item {
-				gap: 12px !important;
+				gap: 16px !important;
 			}
 			.beacon-counter-divider {
-				height: 46px !important;
+				height: 62px !important;
+			}
+		}
+
+		/* Laptop / Small Desktop (1025px - 1199px) */
+		@media (min-width: 1025px) and (max-width: 1199px) {
+			.beacon-counter-number {
+				font-size: 56px !important;
+			}
+			.beacon-counter-title {
+				font-size: 15px !important;
+			}
+			.beacon-counter-item {
+				gap: 14px !important;
+			}
+			.beacon-counter-divider {
+				height: 52px !important;
 			}
 		}
 
@@ -756,7 +774,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			.beacon-counter-container {
 				display: grid !important;
 				grid-template-columns: repeat(2, 1fr) !important;
-				gap: 32px 20px !important;
+				gap: 40px 24px !important;
 				justify-items: center !important;
 			}
 			.beacon-counter-divider {
@@ -768,10 +786,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				padding: 0 24px !important;
 			}
 			.beacon-counter-number {
-				font-size: 48px !important;
+				font-size: 56px !important;
 			}
 			.beacon-counter-title {
-				font-size: 14px !important;
+				font-size: 16px !important;
 			}
 		}
 
@@ -779,8 +797,8 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		@media (max-width: 767px) {
 			.elementor-72 .elementor-element.elementor-element-5407761,
 			.beacon-counter-section {
-				padding-top: 36px !important;
-				padding-bottom: 36px !important;
+				padding-top: 40px !important;
+				padding-bottom: 40px !important;
 				padding-left: 20px !important;
 				padding-right: 20px !important;
 			}
@@ -788,10 +806,10 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			.beacon-counter-container {
 				display: flex !important;
 				flex-direction: column !important;
-				gap: 24px !important;
+				gap: 26px !important;
 				align-items: flex-start !important;
 				width: 100% !important;
-				max-width: 320px !important;
+				max-width: 360px !important;
 				margin: 0 auto !important;
 			}
 			.beacon-counter-col {
@@ -800,17 +818,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				padding: 0 !important;
 			}
 			.beacon-counter-item {
-				gap: 14px !important;
+				gap: 16px !important;
 			}
 			.beacon-counter-divider {
 				display: none !important;
 			}
 			.beacon-counter-number {
-				font-size: 44px !important;
-				min-width: 65px !important;
+				font-size: 52px !important;
+				min-width: 75px !important;
 			}
 			.beacon-counter-title {
-				font-size: 13.5px !important;
+				font-size: 15px !important;
 			}
 		}
 	</style>
