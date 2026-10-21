@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <!DOCTYPE html>
 
 <!DOCTYPE html>
@@ -1157,6 +1157,178 @@
 				left: auto !important;
 			}
 		}
+
+		/* ====================================================
+		   COUNTER SECTION (Exact Match with Reference Design)
+		   ==================================================== */
+		.elementor-72 .elementor-element.elementor-element-5407761,
+		.beacon-counter-section {
+			background-color: #EBF4FC !important;
+			padding-top: 48px !important;
+			padding-bottom: 48px !important;
+			padding-left: 20px !important;
+			padding-right: 20px !important;
+		}
+
+		.elementor-72 .elementor-element.elementor-element-5407761 > .e-con-inner,
+		.beacon-counter-section > .e-con-inner {
+			max-width: 1240px !important;
+			margin: 0 auto !important;
+			width: 100% !important;
+			padding: 0 !important;
+		}
+
+		.elementor-72 .elementor-element.elementor-element-3f4be0d,
+		.elementor-72 .elementor-element.elementor-element-6f89319,
+		.beacon-counter-container {
+			display: flex !important;
+			flex-direction: row !important;
+			align-items: center !important;
+			justify-content: space-between !important;
+			width: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			gap: 0 !important;
+		}
+
+		.beacon-counter-col {
+			flex: 1 1 0 !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			padding: 0 8px !important;
+			border: none !important;
+			background: transparent !important;
+			width: auto !important;
+			max-width: none !important;
+		}
+
+		.beacon-counter-item {
+			display: inline-flex !important;
+			flex-direction: row !important;
+			align-items: center !important;
+			justify-content: center !important;
+			gap: 16px !important;
+			text-align: left !important;
+		}
+
+		.beacon-counter-number-wrap {
+			display: inline-flex !important;
+			align-items: center !important;
+			line-height: 1 !important;
+			flex-shrink: 0 !important;
+		}
+
+		.beacon-counter-number {
+			font-family: "Poppins", "Manrope", Sans-serif !important;
+			font-size: 58px !important;
+			font-weight: 600 !important;
+			line-height: 1 !important;
+			color: #0956A4 !important;
+			letter-spacing: -1px !important;
+			white-space: nowrap !important;
+			display: inline-block !important;
+		}
+
+		.beacon-counter-title {
+			font-family: "Poppins", "Manrope", Sans-serif !important;
+			font-size: 14.5px !important;
+			font-weight: 500 !important;
+			line-height: 1.35 !important;
+			color: #1a2332 !important;
+			text-align: left !important;
+			white-space: nowrap !important;
+			letter-spacing: -0.1px !important;
+		}
+
+		.beacon-counter-divider {
+			width: 1.5px !important;
+			height: 54px !important;
+			background-color: #38B44F !important;
+			flex-shrink: 0 !important;
+			border-radius: 1px !important;
+			margin: 0 4px !important;
+		}
+
+		/* Laptop / Medium Desktop (1025px - 1280px) */
+		@media (min-width: 1025px) and (max-width: 1280px) {
+			.beacon-counter-number {
+				font-size: 48px !important;
+			}
+			.beacon-counter-title {
+				font-size: 13px !important;
+			}
+			.beacon-counter-item {
+				gap: 12px !important;
+			}
+			.beacon-counter-divider {
+				height: 46px !important;
+			}
+		}
+
+		/* Tablet (768px - 1024px) */
+		@media (min-width: 768px) and (max-width: 1024px) {
+			.elementor-72 .elementor-element.elementor-element-6f89319,
+			.beacon-counter-container {
+				display: grid !important;
+				grid-template-columns: repeat(2, 1fr) !important;
+				gap: 32px 20px !important;
+				justify-items: center !important;
+			}
+			.beacon-counter-divider {
+				display: none !important;
+			}
+			.beacon-counter-col {
+				width: 100% !important;
+				justify-content: flex-start !important;
+				padding: 0 24px !important;
+			}
+			.beacon-counter-number {
+				font-size: 48px !important;
+			}
+			.beacon-counter-title {
+				font-size: 14px !important;
+			}
+		}
+
+		/* Mobile (< 768px) */
+		@media (max-width: 767px) {
+			.elementor-72 .elementor-element.elementor-element-5407761,
+			.beacon-counter-section {
+				padding-top: 36px !important;
+				padding-bottom: 36px !important;
+				padding-left: 20px !important;
+				padding-right: 20px !important;
+			}
+			.elementor-72 .elementor-element.elementor-element-6f89319,
+			.beacon-counter-container {
+				display: flex !important;
+				flex-direction: column !important;
+				gap: 24px !important;
+				align-items: flex-start !important;
+				width: 100% !important;
+				max-width: 320px !important;
+				margin: 0 auto !important;
+			}
+			.beacon-counter-col {
+				width: 100% !important;
+				justify-content: flex-start !important;
+				padding: 0 !important;
+			}
+			.beacon-counter-item {
+				gap: 14px !important;
+			}
+			.beacon-counter-divider {
+				display: none !important;
+			}
+			.beacon-counter-number {
+				font-size: 44px !important;
+				min-width: 65px !important;
+			}
+			.beacon-counter-title {
+				font-size: 13.5px !important;
+			}
+		}
 	</style>
 	<noscript>
 		<style id="rocket-lazyload-nojs-css">
@@ -1543,73 +1715,126 @@
 						</div>
 					</div>
 				</div>
-				<div class="elementor-element elementor-element-5407761 e-flex e-con-boxed e-con e-parent"
+				<div class="elementor-element elementor-element-5407761 e-flex e-con-boxed e-con e-parent beacon-counter-section"
 					data-e-type="container" data-element_type="container" data-id="5407761"
 					data-settings='{"background_background":"classic"}'>
 					<div class="e-con-inner">
 						<div class="elementor-element elementor-element-3f4be0d e-con-full e-flex e-con e-child"
 							data-e-type="container" data-element_type="container" data-id="3f4be0d">
-							<div class="elementor-element elementor-element-6f89319 e-grid e-con-full e-con e-child"
-								data-e-type="container" data-element_type="container" data-id="6f89319">
-								<div class="elementor-element elementor-element-d37597c elementor-widget elementor-widget-counter"
-									data-e-type="widget" data-element_type="widget" data-id="d37597c"
-									data-widget_type="counter.default">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">Core Product<br /> Categories</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix">0</span>
-											<span class="elementor-counter-number" data-delimiter=","
-												data-duration="2000" data-from-value="0" data-to-value="3">0</span>
-											<span class="elementor-counter-number-suffix">+</span>
+							<div class="elementor-element elementor-element-6f89319 beacon-counter-container">
+								<!-- Counter 1: 03 Core Product Categories -->
+								<div class="beacon-counter-col elementor-element elementor-element-d37597c">
+									<div class="beacon-counter-item">
+										<div class="beacon-counter-number-wrap">
+											<span class="beacon-counter-number" data-target="3" data-format="02d">03</span>
 										</div>
+										<div class="beacon-counter-title">Core Product<br />Categories</div>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-4580890 elementor-widget elementor-widget-counter"
-									data-e-type="widget" data-element_type="widget" data-id="4580890"
-									data-widget_type="counter.default">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">Healthcare Supply &amp;<br /> Distribution
+								<div class="beacon-counter-divider" aria-hidden="true"></div>
+
+								<!-- Counter 2: 50 Healthcare Supply & Distribution -->
+								<div class="beacon-counter-col elementor-element elementor-element-4580890">
+									<div class="beacon-counter-item">
+										<div class="beacon-counter-number-wrap">
+											<span class="beacon-counter-number" data-target="50" data-format="num">50</span>
 										</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-delimiter=","
-												data-duration="2000" data-from-value="0" data-to-value="50">0</span>
-											<span class="elementor-counter-number-suffix">+</span>
-										</div>
+										<div class="beacon-counter-title">Healthcare Supply<br />&amp; Distribution</div>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-28b4398 elementor-widget elementor-widget-counter"
-									data-e-type="widget" data-element_type="widget" data-id="28b4398"
-									data-widget_type="counter.default">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">International Manufacturing<br /> Partners
+								<div class="beacon-counter-divider" aria-hidden="true"></div>
+
+								<!-- Counter 3: 10+ International Manufacturing Partners -->
+								<div class="beacon-counter-col elementor-element elementor-element-28b4398">
+									<div class="beacon-counter-item">
+										<div class="beacon-counter-number-wrap">
+											<span class="beacon-counter-number" data-target="10" data-format="plus">10+</span>
 										</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-delimiter=","
-												data-duration="2000" data-from-value="0" data-to-value="10">0</span>
-											<span class="elementor-counter-number-suffix">+</span>
-										</div>
+										<div class="beacon-counter-title">International<br />Manufacturing Partners</div>
 									</div>
 								</div>
-								<div class="elementor-element elementor-element-e076a97 elementor-widget elementor-widget-counter"
-									data-e-type="widget" data-element_type="widget" data-id="e076a97"
-									data-widget_type="counter.default">
-									<div class="elementor-counter">
-										<div class="elementor-counter-title">Healthcare Providers <br />&amp; Businesses
+								<div class="beacon-counter-divider" aria-hidden="true"></div>
+
+								<!-- Counter 4: 40 Healthcare Providers & Businesses -->
+								<div class="beacon-counter-col elementor-element elementor-element-e076a97">
+									<div class="beacon-counter-item">
+										<div class="beacon-counter-number-wrap">
+											<span class="beacon-counter-number" data-target="40" data-format="num">40</span>
 										</div>
-										<div class="elementor-counter-number-wrapper">
-											<span class="elementor-counter-number-prefix"></span>
-											<span class="elementor-counter-number" data-delimiter=","
-												data-duration="2000" data-from-value="0" data-to-value="40">0</span>
-											<span class="elementor-counter-number-suffix">+</span>
-										</div>
+										<div class="beacon-counter-title">Healthcare Providers<br />&amp; Businesses</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<script>
+				(function() {
+					var counters = document.querySelectorAll('.beacon-counter-number');
+					if (!counters.length) return;
+					var animated = false;
+					function startCounting() {
+						if (animated) return;
+						animated = true;
+						var duration = 1800;
+						var startTime = null;
+						function update(timestamp) {
+							if (!startTime) startTime = timestamp;
+							var progress = Math.min((timestamp - startTime) / duration, 1);
+							var ease = 1 - Math.pow(1 - progress, 3);
+							counters.forEach(function(el) {
+								var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+								var format = el.getAttribute('data-format') || 'num';
+								var current = Math.round(target * ease);
+								if (format === '02d') {
+									el.textContent = current < 10 ? '0' + current : String(current);
+								} else if (format === 'plus') {
+									el.textContent = current + '+';
+								} else {
+									el.textContent = String(current);
+								}
+							});
+							if (progress < 1) {
+								requestAnimationFrame(update);
+							} else {
+								counters.forEach(function(el) {
+									var target = el.getAttribute('data-target');
+									var format = el.getAttribute('data-format');
+									if (format === '02d') {
+										var num = parseInt(target, 10);
+										el.textContent = num < 10 ? '0' + num : String(num);
+									} else if (format === 'plus') {
+										el.textContent = target + '+';
+									} else {
+										el.textContent = String(target);
+									}
+								});
+							}
+						}
+						requestAnimationFrame(update);
+					}
+					counters.forEach(function(el) {
+						var format = el.getAttribute('data-format');
+						if (format === '02d') el.textContent = '00';
+						else if (format === 'plus') el.textContent = '0+';
+						else el.textContent = '0';
+					});
+					var section = document.querySelector('.beacon-counter-section') || counters[0];
+					if ('IntersectionObserver' in window) {
+						var observer = new IntersectionObserver(function(entries) {
+							entries.forEach(function(entry) {
+								if (entry.isIntersecting) {
+									startCounting();
+									observer.disconnect();
+								}
+							});
+						}, { threshold: 0.15 });
+						observer.observe(section);
+					} else {
+						startCounting();
+					}
+				})();
+				</script>
 				<div class="elementor-element elementor-element-2c3da73 e-flex e-con-boxed e-con e-parent"
 					data-e-type="container" data-element_type="container" data-id="2c3da73">
 					<div class="e-con-inner">

@@ -149,7 +149,6 @@
     };
     registerElementorActions();
     setTimeout(registerElementorActions, 500);
-    setTimeout(registerElementorActions, 1500);
   };
 
   if (document.readyState === 'loading') {
@@ -157,4 +156,101 @@
   } else {
     initMobileMenu();
   }
+
+  // ====================================================
+  // Stats Counter Animation (Viewport-Triggered)
+  // ====================================================
+  const initCounterAnimation = () => {
+    const counterElements = document.querySelectorAll('.beacon-counter-number');
+    if (!counterElements.length) return;
+
+    let animated = false;
+
+    const startCounting = () => {
+      if (animated) return;
+      animated = true;
+
+      const duration = 1800; // ms
+      const startTime = performance.now();
+
+      const update = (now) => {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease-out cubic curve
+        const ease = 1 - Math.pow(1 - progress, 3);
+
+        counterElements.forEach((el) => {
+          const target = parseInt(el.getAttribute('data-target'), 10) || 0;
+          const format = el.getAttribute('data-format') || 'num';
+          const current = Math.round(target * ease);
+
+          if (format === '02d') {
+            el.textContent = current < 10 ? '0' + current : String(current);
+          } else if (format === 'plus') {
+            el.textContent = current + '+';
+          } else {
+            el.textContent = String(current);
+          }
+        });
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          // Ensure exact final values
+          counterElements.forEach((el) => {
+            const target = el.getAttribute('data-target');
+            const format = el.getAttribute('data-format');
+            if (format === '02d') {
+              const num = parseInt(target, 10);
+              el.textContent = num < 10 ? '0' + num : String(num);
+            } else if (format === 'plus') {
+              el.textContent = target + '+';
+            } else {
+              el.textContent = String(target);
+            }
+          });
+        }
+      };
+
+      requestAnimationFrame(update);
+    };
+
+    // Initialize starting zeros
+    counterElements.forEach((el) => {
+      const format = el.getAttribute('data-format');
+      if (format === '02d') {
+        el.textContent = '00';
+      } else if (format === 'plus') {
+        el.textContent = '0+';
+      } else {
+        el.textContent = '0';
+      }
+    });
+
+    const triggerSection = document.querySelector('.beacon-counter-section') || counterElements[0];
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              startCounting();
+              observer.disconnect();
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      observer.observe(triggerSection);
+    } else {
+      startCounting();
+    }
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCounterAnimation);
+  } else {
+    initCounterAnimation();
+  }
 })();
+
