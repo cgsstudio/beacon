@@ -302,3 +302,9 @@
 	src: url('../../2026/10/Poppins-Black.woff2') format('woff2');
 }
 /* End Custom Fonts CSS */
+.elementor-72 .elementor-element.elementor-element-b27683e .elementor-heading-title,
+.elementor-72 .elementor-element.elementor-element-379ab8b .elementor-heading-title,
+.elementor-72 .elementor-element.elementor-element-3f07a6c .elementor-heading-title {
+	font-size: 24px !important;
+	line-height: 1.3em !important;
+}
