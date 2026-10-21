@@ -561,6 +561,88 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			font-size: 24px !important;
 			line-height: 1.3em !important;
 		}
+
+		/* Floating Call & WhatsApp Buttons - Reduced Size (48px) */
+		.elementor-element.elementor-element-7b7df2f {
+			bottom: 16px !important;
+			left: 20px !important;
+			width: 48px !important;
+			height: 48px !important;
+			z-index: 9999 !important;
+		}
+
+		body.rtl .elementor-element.elementor-element-7b7df2f {
+			right: 20px !important;
+			left: auto !important;
+		}
+
+		.elementor-element.elementor-element-7b7df2f .elementor-icon-wrapper {
+			width: 48px !important;
+			height: 48px !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+		}
+
+		.elementor-element.elementor-element-7b7df2f .elementor-icon,
+		.elementor-element.elementor-element-7b7df2f .elementor-icon svg {
+			width: 48px !important;
+			height: 48px !important;
+			font-size: 48px !important;
+			line-height: 48px !important;
+			display: block !important;
+			transition: transform 0.2s ease-in-out !important;
+		}
+
+		.elementor-element.elementor-element-7b7df2f .elementor-icon:hover {
+			transform: scale(1.06) !important;
+		}
+
+		#simple-chat-button--container {
+			bottom: 74px !important;
+			left: 20px !important;
+			z-index: 999999999 !important;
+		}
+
+		body.rtl #simple-chat-button--container {
+			right: 20px !important;
+			left: auto !important;
+		}
+
+		#simple-chat-button--button {
+			width: 48px !important;
+			height: 48px !important;
+			background-size: 32px 32px !important;
+		}
+
+		#simple-chat-button--text {
+			left: 58px !important;
+			bottom: 10px !important;
+		}
+
+		body.rtl #simple-chat-button--text {
+			right: 58px !important;
+			left: auto !important;
+		}
+
+		@media only screen and (max-width: 768px) {
+			.elementor-element.elementor-element-7b7df2f {
+				bottom: 14px !important;
+				left: 16px !important;
+			}
+			body.rtl .elementor-element.elementor-element-7b7df2f {
+				right: 16px !important;
+				left: auto !important;
+			}
+			#simple-chat-button--container {
+				bottom: 70px !important;
+				left: 16px !important;
+			}
+			body.rtl #simple-chat-button--container {
+				right: 16px !important;
+				left: auto !important;
+			}
+		}
 	</style>
 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
 <body class="wp-singular page-template-default page page-id-3197 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-6 elementor-page elementor-page-3197">
@@ -908,7 +990,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/beacon/*"},{"not":{"href_matches":["/beacon/wp-*.php","/beacon/wp-admin/*","/beacon/wp-content/uploads/*","/beacon/wp-content/*","/beacon/wp-content/plugins/*","/beacon/wp-content/themes/hello-elementor/*","/beacon/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<!-- BEGIN Simple Chat Button Plugin --> <style> #simple-chat-button--container { position: fixed; bottom: 80px; left: 20px; z-index: 999999999; } #simple-chat-button--button { display: block; position: relative; text-decoration: none; width: 60px; height: 60px; border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15); background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjU2IiB3aWR0aD0iMjU2IiB2aWV3Qm94PSItMjMgLTIxIDY4MiA2ODIuNjY3IiBmaWxsPSIjZmZmIiB4bWxuczp2PSJodHRwczovL3ZlY3RhLmlvL25hbm8iPjxwYXRoIGQ9Ik01NDQuMzg3IDkzLjAwOEM0ODQuNTEyIDMzLjA2MyA0MDQuODgzLjAzNSAzMjAuMDUxIDAgMTQ1LjI0NiAwIDIuOTggMTQyLjI2MiAyLjkxIDMxNy4xMTNjLS4wMjMgNTUuODk1IDE0LjU3OCAxMTAuNDU3IDQyLjMzMiAxNTguNTUxTC4yNSA2NDBsMTY4LjEyMS00NC4xMDJjNDYuMzI0IDI1LjI3IDk4LjQ3NyAzOC41ODYgMTUxLjU1MSAzOC42MDJoLjEzM2MxNzQuNzg1IDAgMzE3LjA2Ni0xNDIuMjczIDMxNy4xMzMtMzE3LjEzMy4wMzUtODQuNzQyLTMyLjkyMi0xNjQuNDE4LTkyLjgwMS0yMjQuMzU5ek0zMjAuMDUxIDU4MC45NDFoLS4xMDljLTQ3LjI5Ny0uMDItOTMuNjg0LTEyLjczLTEzNC4xNi0zNi43NDJsLTkuNjIxLTUuNzE1LTk5Ljc2NiAyNi4xNzIgMjYuNjI5LTk3LjI3LTYuMjctOS45NzNjLTI2LjM4Ny00MS45NjktNDAuMzItOTAuNDc3LTQwLjI5Ny0xNDAuMjgxLjA1NS0xNDUuMzMyIDExOC4zMDUtMjYzLjU3IDI2My42OTktMjYzLjU3IDcwLjQwNi4wMjMgMTM2LjU5IDI3LjQ3NyAxODYuMzU1IDc3LjMwMXM3Ny4xNTYgMTE2LjA1MSA3Ny4xMzMgMTg2LjQ4NGMtLjA2MiAxNDUuMzQ0LTExOC4zMDUgMjYzLjU5NC0yNjMuNTk0IDI2My41OTR6bTE0NC41ODYtMTk3LjQxOGMtNy45MjItMy45NjktNDYuODgzLTIzLjEzMy01NC4xNDgtMjUuNzgxLTcuMjU4LTIuNjQ1LTEyLjU0Ny0zLjk2MS0xNy44MjQgMy45NjktNS4yODUgNy45My0yMC40NjkgMjUuNzgxLTI1LjA5NCAzMS4wNjZzLTkuMjQyIDUuOTUzLTE3LjE2OCAxLjk4NC0zMy40NTctMTIuMzM2LTYzLjcyNy0zOS4zMzJjLTIzLjU1NS0yMS4wMTItMzkuNDU3LTQ2Ljk2MS00NC4wODItNTQuODkxLTQuNjE3LTcuOTM3LS4wMzktMTEuODEyIDMuNDc3LTE2LjE3MiA4LjU3OC0xMC42NTIgMTcuMTY4LTIxLjgyIDE5LjgwOS0yNy4xMDVzMS4zMi05LjkxOC0uNjY0LTEzLjg4M2MtMS45NzctMy45NjUtMTcuODI0LTQyLjk2OS0yNC40MjYtNTguODQtNi40MzctMTUuNDQ1LTEyLjk2NS0xMy4zNTktMTcuODMyLTEzLjYwMi00LjYxNy0uMjMtOS45MDItLjI3Ny0xNS4xODctLjI3N3MtMTMuODY3IDEuOTgtMjEuMTMzIDkuOTE4LTI3LjczIDI3LjEwMi0yNy43MyA2Ni4xMDUgMjguMzk1IDc2LjY4NCAzMi4zNTUgODEuOTczIDU1Ljg3OSA4NS4zMjggMTM1LjM2NyAxMTkuNjQ4YzE4LjkwNiA4LjE3MiAzMy42NjQgMTMuMDQzIDQ1LjE3NiAxNi42OTUgMTguOTg0IDYuMDMxIDM2LjI1NCA1LjE4IDQ5LjkxIDMuMTQxIDE1LjIyNy0yLjI3NyA0Ni44NzktMTkuMTcyIDUzLjQ4OC0zNy42OCA2LjYwMi0xOC41MTIgNi42MDItMzQuMzc1IDQuNjE3LTM3LjY4NC0xLjk3Ny0zLjMwNS03LjI2Mi01LjI4NS0xNS4xODQtOS4yNTR6bTAgMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+") center/44px 44px no-repeat #25D366; } #simple-chat-button--text { display: none; position: absolute; width: max-content; background-color: #fff; bottom: 15px; left: 70px; border-radius: 5px; padding: 5px 10px; color: #000; font-size: 13px; font-weight: 700; letter-spacing: -0.03em; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; word-break: keep-all; line-height: 1em; text-overflow: ellipsis; vertical-align: middle; box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15); } #simple-chat-button--button:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; border-radius: 50%; -webkit-animation: scb-shockwave-animation 2s 5.3s ease-out infinite; animation: scb-shockwave-animation 2s 5.3s ease-out infinite; z-index: -1; } #simple-chat-button--button:hover { -webkit-transform: scale(1.06); transform: scale(1.06); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; } @media only screen and (max-width: 1024px) { #simple-chat-button--container { bottom: 80px; } } @media only screen and (max-width: 768px) { #simple-chat-button--container { bottom: 80px; } } @-webkit-keyframes scb-shockwave-animation { 0% { -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5); } 95% { box-shadow: 0 0 50px transparent, inset 0 0 30px transparent; } 100% { -webkit-transform: scale(1.2); transform: scale(1.2); } } @keyframes scb-shockwave-animation { 0% { -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5); } 95% { box-shadow: 0 0 50px transparent, inset 0 0 30px transparent; } 100% { -webkit-transform: scale(1.2); transform: scale(1.2); } } </style> <div id="simple-chat-button--container"> <a aria-label="WhatsApp Chat Button" href="https://api.whatsapp.com/send?phone=123456789&amp;text=Hello" id="simple-chat-button--button" rel="nofollow" target="_blank"></a> <span id="simple-chat-button--text"></span> </div> <!-- END Simple Chat Button Plugin -->
+<!-- BEGIN Simple Chat Button Plugin --> <style> #simple-chat-button--container { position: fixed; bottom: 74px; left: 20px; z-index: 999999999; } #simple-chat-button--button { display: block; position: relative; text-decoration: none; width: 48px; height: 48px; border-radius: 50%; -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15); background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjU2IiB3aWR0aD0iMjU2IiB2aWV3Qm94PSItMjMgLTIxIDY4MiA2ODIuNjY3IiBmaWxsPSIjZmZmIiB4bWxuczp2PSJodHRwczovL3ZlY3RhLmlvL25hbm8iPjxwYXRoIGQ9Ik01NDQuMzg3IDkzLjAwOEM0ODQuNTEyIDMzLjA2MyA0MDQuODgzLjAzNSAzMjAuMDUxIDAgMTQ1LjI0NiAwIDIuOTggMTQyLjI2MiAyLjkxIDMxNy4xMTNjLS4wMjMgNTUuODk1IDE0LjU3OCAxMTAuNDU3IDQyLjMzMiAxNTguNTUxTC4yNSA2NDBsMTY4LjEyMS00NC4xMDJjNDYuMzI0IDI1LjI3IDk4LjQ3NyAzOC41ODYgMTUxLjU1MSAzOC42MDJoLjEzM2MxNzQuNzg1IDAgMzE3LjA2Ni0xNDIuMjczIDMxNy4xMzMtMzE3LjEzMy4wMzUtODQuNzQyLTMyLjkyMi0xNjQuNDE4LTkyLjgwMS0yMjQuMzU5ek0zMjAuMDUxIDU4MC45NDFoLS4xMDljLTQ3LjI5Ny0uMDItOTMuNjg0LTEyLjczLTEzNC4xNi0zNi43NDJsLTkuNjIxLTUuNzE1LTk5Ljc2NiAyNi4xNzIgMjYuNjI5LTk3LjI3LTYuMjctOS45NzNjLTI2LjM4Ny00MS45NjktNDAuMzItOTAuNDc3LTQwLjI5Ny0xNDAuMjgxLjA1NS0xNDUuMzMyIDExOC4zMDUtMjYzLjU3IDI2My42OTktMjYzLjU3IDcwLjQwNi4wMjMgMTM2LjU5IDI3LjQ3NyAxODYuMzU1IDc3LjMwMXM3Ny4xNTYgMTE2LjA1MSA3Ny4xMzMgMTg2LjQ4NGMtLjA2MiAxNDUuMzQ0LTExOC4zMDUgMjYzLjU5NC0yNjMuNTk0IDI2My41OTR6bTE0NC41ODYtMTk3LjQxOGMtNy45MjItMy45NjktNDYuODgzLTIzLjEzMy01NC4xNDgtMjUuNzgxLTcuMjU4LTIuNjQ1LTEyLjU0Ny0zLjk2MS0xNy44MjQgMy45NjktNS4yODUgNy45My0yMC40NjkgMjUuNzgxLTI1LjA5NCAzMS4wNjZzLTkuMjQyIDUuOTUzLTE3LjE2OCAxLjk4NC0zMy40NTctMTIuMzM2LTYzLjcyNy0zOS4zMzJjLTIzLjU1NS0yMS4wMTItMzkuNDU3LTQ2Ljk2MS00NC4wODItNTQuODkxLTQuNjE3LTcuOTM3LS4wMzktMTEuODEyIDMuNDc3LTE2LjE3MiA4LjU3OC0xMC42NTIgMTcuMTY4LTIxLjgyIDE5LjgwOS0yNy4xMDVzMS4zMi05LjkxOC0uNjY0LTEzLjg4M2MtMS45NzctMy45NjUtMTcuODI0LTQyLjk2OS0yNC40MjYtNTguODQtNi40MzctMTUuNDQ1LTEyLjk2NS0xMy4zNTktMTcuODMyLTEzLjYwMi00LjYxNy0uMjMtOS45MDItLjI3Ny0xNS4xODctLjI3N3MtMTMuODY3IDEuOTgtMjEuMTMzIDkuOTE4LTI3LjczIDI3LjEwMi0yNy43MyA2Ni4xMDUgMjguMzk1IDc2LjY4NCAzMi4zNTUgODEuOTczIDU1Ljg3OSA4NS4zMjggMTM1LjM2NyAxMTkuNjQ4YzE4LjkwNiA4LjE3MiAzMy42NjQgMTMuMDQzIDQ1LjE3NiAxNi42OTUgMTguOTg0IDYuMDMxIDM2LjI1NCA1LjE4IDQ5LjkxIDMuMTQxIDE1LjIyNy0yLjI3NyA0Ni44NzktMTkuMTcyIDUzLjQ4OC0zNy42OCA2LjYwMi0xOC41MTIgNi42MDItMzQuMzc1IDQuNjE3LTM3LjY4NC0xLjk3Ny0zLjMwNS03LjI2Mi01LjI4NS0xNS4xODQtOS4yNTR6bTAgMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+") center/32px 32px no-repeat #25D366; } #simple-chat-button--text { display: none; position: absolute; width: max-content; background-color: #fff; bottom: 15px; left: 70px; border-radius: 5px; padding: 5px 10px; color: #000; font-size: 13px; font-weight: 700; letter-spacing: -0.03em; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; word-break: keep-all; line-height: 1em; text-overflow: ellipsis; vertical-align: middle; box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15); } #simple-chat-button--button:before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; border-radius: 50%; -webkit-animation: scb-shockwave-animation 2s 5.3s ease-out infinite; animation: scb-shockwave-animation 2s 5.3s ease-out infinite; z-index: -1; } #simple-chat-button--button:hover { -webkit-transform: scale(1.06); transform: scale(1.06); -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; } @media only screen and (max-width: 1024px) { #simple-chat-button--container { bottom: 74px; } } @media only screen and (max-width: 768px) { #simple-chat-button--container { bottom: 74px; } } @-webkit-keyframes scb-shockwave-animation { 0% { -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5); } 95% { box-shadow: 0 0 50px transparent, inset 0 0 30px transparent; } 100% { -webkit-transform: scale(1.2); transform: scale(1.2); } } @keyframes scb-shockwave-animation { 0% { -webkit-transform: scale(1); transform: scale(1); box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5); } 95% { box-shadow: 0 0 50px transparent, inset 0 0 30px transparent; } 100% { -webkit-transform: scale(1.2); transform: scale(1.2); } } </style> <div id="simple-chat-button--container"> <a aria-label="WhatsApp Chat Button" href="https://api.whatsapp.com/send?phone=123456789&amp;text=Hello" id="simple-chat-button--button" rel="nofollow" target="_blank"></a> <span id="simple-chat-button--text"></span> </div> <!-- END Simple Chat Button Plugin -->
 <script id="rocket-browser-checker-js-after">
 "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
 //# sourceURL=rocket-browser-checker-js-after
