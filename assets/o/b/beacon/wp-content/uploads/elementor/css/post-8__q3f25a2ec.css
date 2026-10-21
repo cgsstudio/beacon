@@ -86,32 +86,100 @@
 /* End Custom Fonts CSS */
 
 /* ====================================================
-   HEADER FIX: Button & Language Switcher Alignment
+   HEADER & OFF-CANVAS RESPONSIVE SYSTEM (ALL SCREENS)
    ==================================================== */
+
+/* Prevent background scroll when menu is open */
+body.e-off-canvas__no-scroll {
+    overflow: hidden !important;
+    touch-action: none !important;
+}
+
+/* Header Outer Container */
+.elementor-8 .elementor-element.elementor-element-dfbe730 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
 .elementor-8 .elementor-element.elementor-element-dfbe730 > .e-con-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+}
+
+/* Logo container */
+.elementor-8 .elementor-element.elementor-element-688bd16 {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
     display: flex !important;
     align-items: center !important;
 }
 
+.elementor-8 .elementor-element.elementor-element-13c74cf {
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-13c74cf a {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-13c74cf img {
+    height: 48px !important;
+    width: auto !important;
+    max-width: 190px !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+/* Desktop Navigation container */
+.elementor-8 .elementor-element.elementor-element-db06350 {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-42b7c0e {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-42b7c0e .elementor-nav-menu--main .elementor-item {
+    font-family: "Poppins", Sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 10px 12px !important;
+    white-space: nowrap !important;
+}
+
+/* Header Language Switcher container */
 .elementor-8 .elementor-element.elementor-element-dec690d {
+    flex: 0 0 auto !important;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
     width: auto !important;
     max-width: none !important;
     margin-left: auto !important;
-    margin-right: 14px !important;
-    flex-shrink: 0 !important;
-}
-
-.elementor-8 .elementor-element.elementor-element-7121e05 {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-    width: auto !important;
-    max-width: none !important;
-    flex-shrink: 0 !important;
-    gap: 12px !important;
+    margin-right: 8px !important;
 }
 
 .elementor-8 .elementor-element.elementor-element-22eebd3 {
@@ -121,6 +189,18 @@
     padding: 0 !important;
 }
 
+/* Header Right CTA & Hamburger Container */
+.elementor-8 .elementor-element.elementor-element-7121e05 {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+/* GTranslate Dropdown Styling */
 .gt_switcher {
     position: relative !important;
     overflow: visible !important;
@@ -278,4 +358,391 @@
 .elementor-8 .elementor-element.elementor-element-0d63cc8 .elementor-button:active {
     transform: translateY(0) !important;
     box-shadow: 0 1px 3px rgba(9, 86, 164, 0.3) !important;
+}
+
+/* Hamburger Toggle Button in Header (ad2751a) */
+.elementor-8 .elementor-element.elementor-element-ad2751a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-ad2751a .elementor-icon-wrapper {
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-ad2751a .elementor-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 6px !important;
+    background: #f0f7ff !important;
+    color: #0956A4 !important;
+    fill: #0956A4 !important;
+    border: 1px solid #dce9f8 !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-ad2751a .elementor-icon:hover {
+    background: #0956A4 !important;
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    border-color: #0956A4 !important;
+}
+
+.elementor-8 .elementor-element.elementor-element-ad2751a .elementor-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+    fill: currentColor !important;
+    pointer-events: none !important;
+}
+
+/* ====================================================
+   OFF-CANVAS DRAWER SYSTEM (MOBILE & TABLET)
+   ==================================================== */
+.e-off-canvas {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    z-index: 2147483640 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.e-off-canvas.e-off-canvas--open,
+.e-off-canvas[aria-hidden="false"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+.e-off-canvas .e-off-canvas__overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(15, 23, 42, 0.65) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+    cursor: pointer !important;
+    z-index: 1 !important;
+    pointer-events: all !important;
+}
+
+.e-off-canvas.e-off-canvas--open .e-off-canvas__overlay,
+.e-off-canvas[aria-hidden="false"] .e-off-canvas__overlay {
+    opacity: 1 !important;
+}
+
+.e-off-canvas .e-off-canvas__main {
+    position: relative !important;
+    height: 100% !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: auto !important;
+    pointer-events: none !important;
+}
+
+.e-off-canvas .e-off-canvas__content {
+    background: #ffffff !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.2) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-sizing: border-box !important;
+    pointer-events: all !important;
+}
+
+.e-off-canvas.e-off-canvas--open .e-off-canvas__content,
+.e-off-canvas[aria-hidden="false"] .e-off-canvas__content {
+    transform: translateX(0) !important;
+}
+
+/* Off-canvas header branding & close button */
+.e-off-canvas .elementor-element-ac317d7 {
+    padding: 18px 22px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.e-off-canvas .elementor-element-ac317d7 .e-con-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+.e-off-canvas .elementor-element-6db1872 {
+    width: auto !important;
+    max-width: 150px !important;
+    margin: 0 !important;
+}
+
+.e-off-canvas .elementor-element-6db1872 img {
+    max-height: 40px !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+}
+
+.e-off-canvas .elementor-element-eaa777a {
+    margin: 0 !important;
+    cursor: pointer !important;
+}
+
+.e-off-canvas .elementor-element-eaa777a .elementor-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    fill: #475569 !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.e-off-canvas .elementor-element-eaa777a .elementor-icon:hover {
+    background: #e2e8f0 !important;
+    color: #0f172a !important;
+    fill: #0f172a !important;
+}
+
+.e-off-canvas .elementor-element-eaa777a svg {
+    width: 18px !important;
+    height: 18px !important;
+    fill: currentColor !important;
+    pointer-events: none !important;
+}
+
+/* Mobile Nav Menu inside Off-Canvas */
+.e-off-canvas .elementor-element-0edc7af {
+    padding: 16px 20px !important;
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af .elementor-nav-menu__container {
+    display: block !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af ul.elementor-nav-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af ul.elementor-nav-menu > li > a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 14px !important;
+    font-family: "Poppins", Sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #0f172a !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af ul.elementor-nav-menu > li > a:hover,
+.e-off-canvas .elementor-element-0edc7af ul.elementor-nav-menu > li > a.elementor-item-active {
+    background: #f0f7ff !important;
+    color: #0956A4 !important;
+}
+
+/* Submenu inside Mobile Nav */
+.e-off-canvas .elementor-element-0edc7af ul.sub-menu {
+    display: none !important;
+    padding: 4px 0 4px 16px !important;
+    margin: 4px 0 !important;
+    border-left: 2px solid #e2e8f0 !important;
+    list-style: none !important;
+    background: transparent !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af li.submenu-open > ul.sub-menu {
+    display: block !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af li.submenu-open > a .sub-arrow svg {
+    transform: rotate(180deg) !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af .sub-arrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    margin-left: 8px !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af .sub-arrow svg {
+    width: 12px !important;
+    height: 12px !important;
+    transition: transform 0.2s ease !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af ul.sub-menu li a {
+    display: block !important;
+    padding: 9px 12px !important;
+    font-family: "Poppins", Sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #475569 !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease, background 0.2s ease !important;
+}
+
+.e-off-canvas .elementor-element-0edc7af ul.sub-menu li a:hover,
+.e-off-canvas .elementor-element-0edc7af ul.sub-menu li a.elementor-item-active {
+    color: #0956A4 !important;
+    background: #f8fafc !important;
+}
+
+/* Off-canvas footer with language switcher */
+.e-off-canvas .elementor-element-37f0eb0 {
+    padding: 18px 22px !important;
+    border-top: 1px solid #f1f5f9 !important;
+    margin-top: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* ====================================================
+   BREAKPOINT OVERRIDES (DESKTOP / LAPTOP / TABLET / MOBILE)
+   ==================================================== */
+
+/* Desktop (> 1024px) */
+@media (min-width: 1025px) {
+    .elementor-8 .elementor-element.elementor-element-db06350 {
+        display: flex !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-42b7c0e {
+        display: block !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-dec690d {
+        display: flex !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-ad2751a {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-0d63cc8 {
+        display: inline-flex !important;
+    }
+}
+
+/* Laptop / Small Desktop (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .elementor-8 .elementor-element.elementor-element-42b7c0e .elementor-nav-menu--main .elementor-item {
+        font-size: 14px !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-0d63cc8 .elementor-button {
+        padding: 0 16px !important;
+        font-size: 14px !important;
+    }
+    .gt_switcher .gt_selected a {
+        min-width: 105px !important;
+        padding: 0 28px 0 10px !important;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .elementor-8 .elementor-element.elementor-element-db06350 {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-dec690d {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-ad2751a {
+        display: inline-flex !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-0d63cc8 {
+        display: inline-flex !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-7121e05 {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 767px) {
+    .elementor-8 .elementor-element.elementor-element-dfbe730 {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-dfbe730 > .e-con-inner {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-13c74cf img {
+        height: 38px !important;
+        max-width: 140px !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-db06350 {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-dec690d {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-0d63cc8 {
+        display: none !important;
+    }
+    .elementor-8 .elementor-element.elementor-element-ad2751a {
+        display: inline-flex !important;
+    }
 }
